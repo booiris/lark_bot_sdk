@@ -1,4 +1,4 @@
-use crate::core::{Lark, LarkInner};
+use crate::core::{ Lark, LarkInner};
 
 pub struct TaskService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -23,26 +23,26 @@ impl<Store, Client> Lark<Store, Client> {
         TaskService { cli: &self.inner }
     }
 }
-pub mod batch_delete_task_collaborator;
-pub mod batch_delete_task_follower;
-pub mod complete_task;
-pub mod create_task;
-pub mod create_task_collaborator;
-pub mod create_task_comment;
-pub mod create_task_follower;
-pub mod create_task_reminder;
-pub mod delete_task;
-pub mod delete_task_collaborator;
 pub mod delete_task_comment;
-pub mod delete_task_follower;
-pub mod delete_task_reminder;
-pub mod get_task;
-pub mod get_task_collaborator_list;
-pub mod get_task_comment;
-pub mod get_task_comment_list;
-pub mod get_task_follower_list;
-pub mod get_task_list;
 pub mod get_task_reminder_list;
+pub mod get_task_collaborator_list;
+pub mod create_task_comment;
+pub mod delete_task;
+pub mod get_task_follower_list;
+pub mod create_task_collaborator;
 pub mod uncomplete_task;
+pub mod delete_task_collaborator;
+pub mod get_task_list;
+pub mod create_task;
+pub mod create_task_follower;
+pub mod get_task_comment_list;
+pub mod create_task_reminder;
+pub mod complete_task;
+pub mod delete_task_reminder;
 pub mod update_task;
+pub mod delete_task_follower;
+pub mod batch_delete_task_follower;
 pub mod update_task_comment;
+pub mod get_task_comment;
+pub mod get_task;
+pub mod batch_delete_task_collaborator;

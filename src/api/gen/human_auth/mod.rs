@@ -1,4 +1,4 @@
-use crate::core::{Lark, LarkInner};
+use crate::core::{ Lark, LarkInner};
 
 pub struct HumanAuthService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -23,7 +23,7 @@ impl<Store, Client> Lark<Store, Client> {
         HumanAuthService { cli: &self.inner }
     }
 }
-pub mod create_identity;
 pub mod crop_face_verify_image;
-pub mod get_face_verify_auth_result;
+pub mod create_identity;
 pub mod upload_face_verify_image;
+pub mod get_face_verify_auth_result;

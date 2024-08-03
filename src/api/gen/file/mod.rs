@@ -1,4 +1,4 @@
-use crate::core::{Lark, LarkInner};
+use crate::core::{ Lark, LarkInner};
 
 pub struct FileService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -23,7 +23,7 @@ impl<Store, Client> Lark<Store, Client> {
         FileService { cli: &self.inner }
     }
 }
-pub mod download_file;
-pub mod download_image;
-pub mod upload_file;
 pub mod upload_image;
+pub mod download_file;
+pub mod upload_file;
+pub mod download_image;

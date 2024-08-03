@@ -1,4 +1,4 @@
-use crate::core::{Lark, LarkInner};
+use crate::core::{ Lark, LarkInner};
 
 pub struct AdminService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -23,16 +23,16 @@ impl<Store, Client> Lark<Store, Client> {
         AdminService { cli: &self.inner }
     }
 }
-pub mod admin_reset_password;
-pub mod create_admin_badge;
+pub mod update_admin_badge;
+pub mod get_admin_badge_grant_list;
 pub mod create_admin_badge_grant;
-pub mod delete_admin_badge_grant;
+pub mod get_admin_user_stats;
+pub mod upload_admin_badge_image;
+pub mod update_admin_badge_grant;
 pub mod get_admin_badge;
 pub mod get_admin_badge_grant;
-pub mod get_admin_badge_grant_list;
+pub mod admin_reset_password;
+pub mod delete_admin_badge_grant;
 pub mod get_admin_badge_list;
 pub mod get_admin_dept_stats;
-pub mod get_admin_user_stats;
-pub mod update_admin_badge;
-pub mod update_admin_badge_grant;
-pub mod upload_admin_badge_image;
+pub mod create_admin_badge;
