@@ -26,7 +26,7 @@ reqwest = { version = "0.12", features = ["stream", "json", "multipart"] }
 http = "1.1"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-bytes = "1.6"
+bytes = "1.7"
 futures-util = { version = "0.3" }
 base64 = "0.22"
 typemap_rev = { version = "0.3", optional = true }
