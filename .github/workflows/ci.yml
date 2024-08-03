@@ -1,6 +1,9 @@
 name: "Test Suite"
 on:
-  push: { branches: [master] }
+  push:  
+    branches: [master]
+    tags: 
+      - "v*.*.*" 
   pull_request:
 
 jobs:
