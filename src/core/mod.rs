@@ -20,6 +20,7 @@ pub mod store;
 #[cfg(feature = "test-util")]
 pub mod mocker;
 
+#[cfg_attr(docsrs, doc(cfg(feature = "test-util")))]
 #[cfg(feature = "test-util")]
 pub mod impl_request_mock;
 

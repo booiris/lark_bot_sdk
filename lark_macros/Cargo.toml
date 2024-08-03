@@ -5,8 +5,8 @@ edition = "2021"
 authors = ["booiris02@gmail.com"]
 license = "MIT"
 readme = "../README.md"
-repository = ""
-documentation = ""
+repository = "https://github.com/booiris/lark_bot_sdk/tree/master/lark_macros"
+documentation = "https://booiris.github.io/lark_bot_sdk/lark_bot_sdk/macros"
 description = "rust lark bot sdk macros"
 keywords = ["lark", "macros"]
 

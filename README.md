@@ -18,7 +18,7 @@
 lark_bot_sdk = { version = "0.1", features = ["message", "ai",...] }
 ```
 
-查询 api 方法参考: [cargo doc]() (`ctrl` + `shift` + `f`)
+查询 api 方法参考: [cargo doc](https://booiris.github.io/lark_bot_sdk/lark_bot_sdk/) (`ctrl` + `shift` + `f`)
 
 ![case](source/case.gif)
 
@@ -41,7 +41,7 @@ fn client() -> &'static DefaultLarkClient {
 ```
 ### 配置 Lark 客户端
 
-使用 `LarkBuilder` 配置客户端，具体参数参见: [parma]() 。
+使用 `LarkBuilder` 配置客户端，具体参数参见: [parma](https://booiris.github.io/lark_bot_sdk/lark_bot_sdk/core/struct.LarkBuilder.html) 。
 
 ```rust
 let client = LarkBuilder::default()
@@ -144,7 +144,7 @@ async fn main() {
 }
 ```
 
-tips: 可以使用宏简化构建参数过程，具体使用方法请参考示例和[文档]()。
+tips: 可以使用宏简化构建参数过程，具体使用方法请参考示例和[文档](https://booiris.github.io/lark_bot_sdk/lark_bot_sdk/core/model/struct.ApiRequest.html)。
 
 具体代码参见：[./examples/do_req.rs](examples/do_req.rs)
 
