@@ -1,0 +1,3 @@
+iac:
+  ignored_paths:
+    - '**/src/api/gen/**'

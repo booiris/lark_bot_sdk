@@ -1,0 +1,15 @@
+/target
+.vscode
+scope.json
+gen_scope.py
+.env
+/gen_api/temp.json
+**.temp
+/gen_api/api.csv
+/gen_api/gen
+/gen_api/api_data.csv
+/gen_api/not_new_api.csv
+# /src/api/gen
+/problem    
+test_result/**
+source/test_**

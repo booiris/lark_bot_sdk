@@ -1,0 +1,1719 @@
+"service","func","req","resp","extra"
+"ai","extract_ai_contract_field",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""file_id"": ""121345678"",
+        ""price"": {
+            ""contract_price"": 200000,
+            ""contract_price_original"": ""\""200000\"""",
+            ""text"": ""本合同项下总金额共计￥200000（贰拾万元整）""
+        },
+        ""time"": {
+            ""time_start"": ""2020-07-01"",
+            ""time_end"": ""2022-06-30"",
+            ""original_time_start"": ""2020年07月1日"",
+            ""original_time_end"": ""2022年6月30日"",
+            ""text_start"": ""本协议自有效期自【2020】年【07】月【1】日至【2022】年【6】月【30】日，有效期2年。"",
+            ""text_end"": ""本协议自有效期自【2020】年【07】月【1】日至【2022】年【6】月【30】日，有效期2年。"",
+            ""initial_term"": {
+                ""initial_time"": ""2"",
+                ""initial_unit"": ""年""
+            },
+            ""text_initial_term"": ""2年""
+        },
+        ""copy"": {
+            ""copy_num"": 2,
+            ""original_copy"": ""一式贰份"",
+            ""key"": ""协议"",
+            ""text"": ""此协议一式贰份，双方各执壹份，具有同等法律效力。""
+        },
+        ""currency"": {
+            ""currency_name"": ""CNY"",
+            ""currency_text"": ""¥""
+        },
+        ""header"": ""项目活动框架协议"",
+        ""body_info"": [
+            {
+                ""body_type"": ""buy"",
+                ""value"": {
+                    ""address"": ""北京市A区B园4号楼"",
+                    ""contacts"": ""张三"",
+                    ""email"": ""zhangsan.1111@bytedance.com"",
+                    ""phone"": ""13600000000"",
+                    ""id_number"": ""310XXXXXXXXXXXXXXX"",
+                    ""legal_representative"": ""张三"",
+                    ""party"": ""北京字节跳动网络技术有限公司""
+                }
+            }
+        ],
+        ""bank_info"": [
+            {
+                ""bank_type"": ""buy"",
+                ""value"": {
+                    ""account_name"": ""北京字节跳动网络技术有限公司"",
+                    ""bank_name"": ""中国A银行B支行"",
+                    ""account_number"": ""11230xxxxx004701"",
+                    ""phone"": ""010-8xxxx688"",
+                    ""contacts"": ""张三"",
+                    ""tax_number"": ""911101xxxxx684235"",
+                    ""address"": ""A市B区C园D楼3-8"",
+                    ""id_number"": ""11230xxxxx004701"",
+                    ""email"": ""zhangsan.1111@bytedance.com""
+                }
+            }
+        ]
+    }
+}",
+"application","get_application_usage_department_overview","{
+    ""date"": ""2021-10-11"",
+    ""cycle_type"": 1,
+    ""department_id"": ""dfd2f9g16dd75ggd"",
+    ""recursion"": 2,
+    ""page_size"": 10,
+    ""page_token"": ""new-f556d0f964cf4baab7092b5b0093317c""
+}",,
+"attendance","batch_create_attendance_user_flow","{
+    ""flow_records"": [
+        {
+            ""user_id"": ""abd754f7"",
+            ""creator_id"": ""abd754f7"",
+            ""location_name"": ""西溪八方城"",
+            ""check_time"": ""1611476284 （只支持导入打卡时间在2022年1月1日之后的数据）"",
+            ""comment"": ""上班打卡"",
+            ""record_id"": ""考勤内部的打卡记录ID, 6709359313699356941（导入时此参数无效）"",
+            ""ssid"": ""b0:b8:67:5c:1d:72"",
+            ""bssid"": ""b0:b8:67:5c:1d:72"",
+            ""is_field"": true,
+            ""is_wifi"": true,
+            ""type"": 7,
+            ""photo_urls"": [
+                ""https://time.clockin.biz/manage/download/6840389754748502021""
+            ],
+            ""check_result"": ""Invalid"",
+            ""external_id"": ""record_123""
+        }
+    ]
+}","{
+    ""code"": 0,
+    ""msg"": ""success，当流水导入失败时，msg格式为：[失败流水1userid-失败流水1creatorid, 失败流水2userid-失败流水2creatorid ... ]"",
+    ""data"": {
+        ""flow_records"": [
+            {
+                ""user_id"": ""abd754f7"",
+                ""creator_id"": ""abd754f7"",
+                ""location_name"": ""西溪八方城"",
+                ""check_time"": ""1611476284"",
+                ""comment"": ""上班打卡"",
+                ""record_id"": ""考勤内部的打卡记录ID, 6709359313699356941（导入时此参数无效）"",
+                ""ssid"": ""b0:b8:67:5c:1d:72"",
+                ""bssid"": ""b0:b8:67:5c:1d:72"",
+                ""is_field"": true,
+                ""is_wifi"": true,
+                ""type"": 7,
+                ""photo_urls"": [
+                    ""https://time.clockin.biz/manage/download/6840389754748502021""
+                ],
+                ""check_result"": ""Invalid"",
+                ""external_id"": ""record_123""
+            }
+        ]
+    }
+}",
+"attendance","get_attendance_user_flow",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""user_id"": ""abd754f7"",
+        ""creator_id"": ""abd754f7"",
+        ""location_name"": ""西溪八方城"",
+        ""check_time"": ""1611476284"",
+        ""comment"": ""上班打卡"",
+        ""record_id"": ""考勤内部的打卡记录ID, 6709359313699356941（导入时此参数无效）"",
+        ""ssid"": ""b0:b8:67:5c:1d:72"",
+        ""bssid"": ""b0:b8:67:5c:1d:72"",
+        ""is_field"": true,
+        ""is_wifi"": true,
+        ""type"": 7,
+        ""photo_urls"": [
+            ""https://time.clockin.biz/manage/download/6840389754748502021""
+        ],
+        ""device_id"": ""（只支持小程序打卡，导入时无效）99e0609ee053448596502691a81428654d7ded64c7bd85acd982d26b3636c37d"",
+        ""check_result"": ""Invalid"",
+        ""external_id"": ""record_123""
+    }
+}",
+"baike","create_baike_entity",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""entity"": {
+            ""id"": ""enterprise_40217521"",
+            ""main_keys"": [
+                {
+                    ""key"": ""飞书词典"",
+                    ""display_status"": {
+                        ""allow_highlight"": true,
+                        ""allow_search"": true
+                    }
+                }
+            ],
+            ""aliases"": [
+                {
+                    ""key"": ""词典"",
+                    ""display_status"": {
+                        ""allow_highlight"": true,
+                        ""allow_search"": true
+                    }
+                }
+            ],
+            ""description"": ""词典是飞书提供的一款知识管理工具，通过飞书词典可以帮助企业将分散的知识信息进行聚合，并通过UGC的方式，促进企业知识的保鲜和流通"",
+            ""create_time"": ""1627540853"",
+            ""update_time"": ""1627541853"",
+            ""related_meta"": {
+                ""abbreviations"": [
+                    {
+                        ""id"": ""enterprise_4450890""
+                    },
+                    {
+                        ""id"": ""enterprise_703481393374354564""
+                    },
+                    {
+                        ""id"": ""enterprise_7036598993106796547""
+                    }
+                ],
+                ""chats"": [
+                    {
+                        ""id"": ""oc_c13831833eaa8c92c52befa759ea4806""
+                    },
+                    {
+                        ""id"": ""oc_c8161c9109966a24127e73b10233b295""
+                    }
+                ],
+                ""docs"": [
+                    {
+                        ""title"": ""猜你想问 / FAQs"",
+                        ""url"": ""https://bytedance.feishu.cn/wiki/wikcnZ8Lq4f9DMCDOtdcIzCUjAh""
+                    },
+                    {
+                        ""title"": ""快速了解飞书文档 | Introducing Feishu Docs"",
+                        ""url"": ""https://bytedance.feishu.cn/docs/doccnxlVCCFjMsJE15I7PLAjIWc""
+                    }
+                ],
+                ""links"": [
+                    {
+                        ""title"": ""飞书官网"",
+                        ""url"": ""https://feishu.cn""
+                    }
+                ],
+                ""oncalls"": [
+                    {
+                        ""id"": ""7023689049445548034""
+                    },
+                    {
+                        ""id"": ""7024063787560910850""
+                    }
+                ],
+                ""users"": [
+                    {
+                        ""id"": ""ou_30b07b63089ea46518789914dac63d36"",
+                        ""title"": ""负责人""
+                    },
+                    {
+                        ""id"": ""ou_b292c0d285c14754639fa4501e80c36a"",
+                        ""title"": """"
+                    }
+                ],
+                ""classifications"": [
+                    {
+                        ""id"": ""7049606926702837761"",
+                        ""father_id"": ""7049606926702837777""
+                    }
+                ],
+                ""images"": [
+                    {
+                        ""token"": ""boxbcEcmKiD3SGHvgqWTpvdc7jc""
+                    }
+                ]
+            },
+            ""statistics"": {
+                ""like_count"": 100,
+                ""dislike_count"": 20
+            },
+            ""outer_info"": {
+                ""provider"": ""星云"",
+                ""outer_id"": ""client_6539i3498d""
+            },
+            ""rich_text"": ""词典是飞书提供的一款知识管理工具，通过飞书词典可以帮助企业将分散的知识信息进行聚合，并通过UGC的方式，促进企业知识的保鲜和流通""
+        }
+    }
+}",
+"bitable","copy_bitable_app",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""app"": {
+            ""app_token"": ""S404b*****e9PQsYDWYcNryFn0g"",
+            ""name"": ""一篇新的多维表格"",
+            ""folder_token"": ""fldbco*****CIMltVc"",
+            ""url"": ""https://example.feishu.cn/base/S404b*****e9PQsYDWYcNryFn0g"",
+            ""default_table_id"": "" //只有创建才返回默认表Id"",
+            ""time_zone"": ""Asia/Shanghai""
+        }
+    }
+}",
+"bitable","copy_bitable_dashboard",,"{
+    ""data"": {
+        ""block_id"": ""blkXsf60PxMdJLQN"",
+        ""name"": ""New Dashboard""
+    },
+    ""code"": 0,
+    ""msg"": """"
+}",
+"vc","get_vc_alert_list",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""has_more"": true,
+        ""page_token"": ""50"",
+        ""items"": [
+            {
+                ""alert_id"": ""7115030004018184212"",
+                ""resource_scope"": ""XX层级"",
+                ""monitor_target"": 2,
+                ""alert_strategy"": ""连续1个周期（共1分钟），控制器电量 < 50%，则告警"",
+                ""alert_time"": ""1656914944"",
+                ""alert_level"": 2,
+                ""contacts"": [
+                    {
+                        ""contact_type"": 1,
+                        ""contact_name"": ""张三""
+                    }
+                ],
+                ""notifyMethods"": [
+                        0,
+                        1
+                ],
+                ""alertRule"": ""签到板断开连接"",
+                ""process_time"": ""1656914944"",
+                ""recover_time"": ""1656914944"",
+                ""process_status"": 2,
+                ""alert_rule_id"": ""100"",
+                ""monitor_target_room_id"": ""omm_4de32cf10a4358788ff4e09e37ebbf9b"",
+                ""monitor_target_room_mac"": ""52:60:19:9c:97:21""
+            }
+        ]
+    }
+}",
+"task","create_task_comment","{
+    ""content"":""多喝水，少吃肉"",
+    ""rich_content"":""富文本评论[飞书开放平台](https://open.feishu.cn)"",
+    ""parent_id"":""0""
+}",,
+"message","merge_forward_message",,"{
+        ""code"": 0,
+        ""msg"": ""success"",
+        ""data"": {
+            ""message"": {
+                ""message_id"": ""om_dc13264520392913993dd051dba21dcf"",
+                ""root_id"": ""om_40eb06e7b84dc71c03e009ad3c754195"",
+                ""parent_id"": ""om_d4be107c616aed9c1da8ed8068570a9f"",
+                ""msg_type"": ""merge_forward"",
+                ""create_time"": ""1615380573411"",
+                ""update_time"": ""1615380573411"",
+                ""deleted"": false,
+                ""updated"": false,
+                ""chat_id"": ""oc_a0553eda9014c201e6969b478895c230"",
+                ""sender"": {
+                    ""id"": ""cli_9f427eec54ae901b"",
+                    ""id_type"": ""app_id"",
+                    ""sender_type"": ""app"",
+                    ""tenant_key"": ""736588c9260f175e""
+                },
+                ""body"": {
+                    ""content"": ""Merged and Forwarded Message""
+                }
+            },
+            ""invalid_message_id_list"": [
+                ""om_61244dab1ef11257621dcd7g0e256651""
+            ]
+        }
+    }",
+"message","delete_message_reaction",,"{
+        ""code"": 0,
+        ""msg"": ""success"",
+        ""data"": {
+            ""reaction_id"": ""ZCaCIjUBVVWSrm5L-3ZTw*************sNa8dHVplEzzSfJVUVLMLcS_"",
+            ""operator"": {
+                ""operator_id"": ""ou_ff0b7ba35fb********67dfc8b885136"",
+                ""operator_type"": ""user""
+            },
+            ""action_time"": ""1626086391570"",
+            ""reaction_type"": {
+                ""emoji_type"": ""SMILE""
+            }
+        }
+    }",
+"hire","update_hire_offer",,"{
+        ""code"": 0,
+        ""msg"": ""success"",
+        ""data"": {
+            ""offer_id"": ""7016605170635213100"",
+            ""schema_id"": ""7013318077945596204"",
+            ""basic_info"": {
+                ""department_id"": ""od-6b394871807047c7023ebfc1ff37cd3a"",
+                ""leader_user_id"": ""ou_ce613028fe74745421f5dc320bb9c709"",
+                ""employment_job_id"": ""123"",
+                ""employee_type_id"": ""2"",
+                ""job_family_id"": ""6807407987381831949"",
+                ""job_level_id"": ""6807407987381881101"",
+                ""probation_month"": 3,
+                ""contract_year"": 3,
+                ""contract_period"": {
+                    ""period_type"": 1,
+                    ""period"": 3
+                },
+                ""expected_onboard_date"": ""{\""date\"":\""2022-04-07\""}"",
+                ""onboard_address_id"": ""6897079709306259719"",
+                ""work_address_id"": ""6897079709306259719"",
+                ""owner_user_id"": ""ou_ce613028fe74745421f5dc320bb9c709"",
+                ""recommended_words"": ""十分优秀，推荐入职"",
+                ""job_requirement_id"": ""2342352224"",
+                ""job_process_type_id"": 2,
+                ""attachment_id_list"": [
+                    ""7159169181052061965""
+                ],
+                ""attachment_description"": ""张三的简历"",
+                ""operator_user_id"": ""ou_ce613028fe74745421f5dc320bb9c709""
+            },
+            ""salary_info"": {
+                ""currency"": ""CNY"",
+                ""basic_salary"": ""1000000"",
+                ""probation_salary_percentage"": ""0.8"",
+                ""award_salary_multiple"": ""3"",
+                ""option_shares"": ""11"",
+                ""quarterly_bonus"": ""12"",
+                ""half_year_bonus"": ""16""
+            },
+            ""customized_info_list"": [
+                {
+                    ""id"": ""6972464088568269100"",
+                    ""value"": ""1""
+                }
+            ]
+        }
+    }",
+"helpdesk","create_helpdesk_agent_skill","{
+    ""name"": ""部门技能"",
+    ""rules"": [
+        {
+            ""id"": ""12"",
+            ""selected_operator"": 8,
+            ""operand"": ""{\n\""selected_departments\"":[\n{\n\""id\"":\""部门ID\"",\n\""name\"":\""IT\""\n}\n]\n}""
+        }
+    ],
+    ""agent_ids"": [
+        ""客服ID""
+    ]
+}",,
+"helpdesk","get_helpdesk_agent_skill_rule_list",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""rules"": [
+            {
+                ""id"": ""test-skill-id"",
+                ""operator_options"": [
+                    7,
+                    8
+                ],
+                ""operand"": ""{\n\""selected_departments\"":[\n{\n\""id\"":\""部门ID\"",\n\""name\"":\""IT\""\n}\n]\n}"",
+                ""category"": 3,
+                ""display_name"": ""中文知识库分类""
+            }
+        ]
+    }
+}",
+"helpdesk","get_helpdesk_agent_email",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""agents"": ""{\""ou_xxx\"": \""xxx\"",\""ou_yyy\"": \""yyy\""}""
+    }
+}",
+"helpdesk","get_helpdesk_agent_skill",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""agent_skill"": {
+            ""id"": ""test-skill-id"",
+            ""name"": ""skill-name"",
+            ""rules"": [
+                {
+                    ""id"": ""test-skill-id"",
+                    ""selected_operator"": 8,
+                    ""operator_options"": [
+                        7,
+                        8
+                    ],
+                    ""operand"": ""{\n\""selected_departments\"":[\n{\n\""id\"":\""部门ID\"",\n\""name\"":\""IT\""\n}\n]\n}"",
+                    ""category"": 3,
+                    ""display_name"": ""Chinese FAQs category""
+                }
+            ],
+            ""agent_ids"": [
+                ""ou_ea651a5c09e2d01af8acd34059f5359b""
+            ],
+            ""is_default"": false,
+            ""agents"": [
+                {
+                    ""id"": ""ou_ea651a5c09e2d01af8acd34059f5359b"",
+                    ""avatar_url"": ""https://avatar-url.com/test.png"",
+                    ""name"": ""test-user""
+                }
+            ]
+        }
+    }
+}",
+"helpdesk","send_helpdesk_ticket_message","{
+    ""msg_type"": ""post"",
+    ""content"": """"
+}",,
+"helpdesk","update_helpdesk_agent_skill","{
+    ""agent_skill"": {
+        ""name"": ""skill-name"",
+        ""rules"": [
+            {
+                ""id"": ""test-skill-id"",
+                ""selected_operator"": 8,
+                ""operator_options"": [
+                    7,
+                    8
+                ],
+                ""operand"": ""{\n\""selected_departments\"":[\n{\n\""id\"":\""部门ID\"",\n\""name\"":\""IT\""\n}\n]\n}""
+            }
+        ],
+        ""agent_ids"": [
+            ""ou_ea21d7f018e1155d960e40d33191f966""
+        ]
+    }
+}",,
+"calendar","get_calendar_event",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""event"": {
+            ""event_id"": ""00592a0e-7edf-4678-bc9d-1b77383ef08e_0"",
+            ""organizer_calendar_id"": ""feishu.cn_xxxxxxxxxx@group.calendar.feishu.cn"",
+            ""summary"": ""日程标题"",
+            ""description"": ""日程描述"",
+            ""start_time"": {
+                ""date"": ""2018-09-01"",
+                ""timestamp"": ""1602504000"",
+                ""timezone"": ""Asia/Shanghai""
+            },
+            ""end_time"": {
+                ""date"": ""2018-09-01"",
+                ""timestamp"": ""1602504000"",
+                ""timezone"": ""Asia/Shanghai""
+            },
+            ""vchat"": {
+                ""vc_type"": ""third_party"",
+                ""icon_type"": ""vc"",
+                ""description"": ""发起视频会议"",
+                ""meeting_url"": ""https://example.com"",
+                ""meeting_settings"": {
+                    ""owner_id"": ""ou_7d8a6e6df7621556ce0d21922b676706ccs"",
+                    ""join_meeting_permission"": ""only_organization_employees"",
+                    ""assign_hosts"": [
+                        ""ou_7d8a6e6df7621556ce0d21922b676706ccs""
+                    ],
+                    ""auto_record"": false,
+                    ""open_lobby"": true,
+                    ""allow_attendees_start"": true
+                }
+            },
+            ""visibility"": ""default"",
+            ""attendee_ability"": ""can_see_others"",
+            ""free_busy_status"": ""busy"",
+            ""location"": {
+                ""name"": ""地点名称"",
+                ""address"": ""地点地址"",
+                ""latitude"": 1.100000023841858,
+                ""longitude"": 2.200000047683716
+            },
+            ""color"": -1,
+            ""reminders"": [
+                {
+                    ""minutes"": 5
+                }
+            ],
+            ""recurrence"": ""FREQ=DAILY;INTERVAL=1"",
+            ""status"": ""confirmed"",
+            ""is_exception"": false,
+            ""recurring_event_id"": ""1cd45aaa-fa70-4195-80b7-c93b2e208f45"",
+            ""create_time"": ""1602504000"",
+            ""schemas"": [
+                {
+                    ""ui_name"": ""ForwardIcon"",
+                    ""ui_status"": ""hide"",
+                    ""app_link"": ""https://applink.feishu.cn/client/calendar/event/detail?calendarId=xxxxxx&key=xxxxxx&originalTime=xxxxxx&startTime=xxxxxx""
+                }
+            ],
+            ""event_organizer"": {
+                ""user_id"": ""ou_xxxxxx"",
+                ""display_name"": ""孙二二""
+            },
+            ""app_link"": ""https://applink.larkoffice.com/client/calendar/event/detail?calendarId=7039673579105026066&key=aeac9c56-aeb1-4179-a21b-02f278f59048&originalTime=0&startTime=1700496000"",
+            ""attendees"": [
+                {
+                    ""type"": ""user"",
+                    ""attendee_id"": ""user_xxxxxx"",
+                    ""rsvp_status"": ""accept"",
+                    ""is_optional"": false,
+                    ""is_organizer"": true,
+                    ""is_external"": false,
+                    ""display_name"": ""张三"",
+                    ""chat_members"": [
+                        {
+                            ""rsvp_status"": ""accept"",
+                            ""is_optional"": true,
+                            ""display_name"": ""\""zhangsan\"""",
+                            ""is_organizer"": false,
+                            ""is_external"": false
+                        }
+                    ],
+                    ""user_id"": ""ou_8bfcecaf02c9d8d026de984db04cf5b9"",
+                    ""chat_id"": ""oc_a0553eda9014c201e6969b478895c230"",
+                    ""room_id"": ""omm_83d09ad4f6896e02029a6a075f71c9d1"",
+                    ""third_party_email"": ""test@example.com"",
+                    ""operate_id"": ""4d7a3c6g"",
+                    ""resource_customization"": [
+                        {
+                            ""index_key"": ""16281481596100"",
+                            ""input_content"": ""16281481596100"",
+                            ""options"": [
+                                {
+                                    ""option_key"": ""16281481596185xxx"",
+                                    ""others_content"": ""xxxx""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            ""has_more_attendee"": false
+        }
+    }
+}",
+"bitable","get_bitable_app_role_list",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""items"": [
+            {
+                ""role_id"": ""rola66uIZT"",
+                ""role_name"": ""role1"",
+                ""table_roles"": [
+                    {
+                        ""table_name"": ""table1"",
+                        ""table_id"": ""tblFIgBzKEq75HSE"",
+                        ""table_perm"": 2,
+                        ""allow_add_record"": false,
+                        ""allow_delete_record"": true,
+                        ""rec_rule"": {
+                            ""conjunction"": ""or"",
+                            ""conditions"": [
+                                {
+                                    ""field_name"": ""单选"",
+                                    ""field_type"": 3,
+                                    ""operator"": ""is"",
+                                    ""value"": [
+                                        ""optbdVHf4q""
+                                    ]
+                                },
+                                {
+                                    ""field_name"": ""人员"",
+                                    ""field_type"": 11,
+                                    ""operator"": ""contains"",
+                                    ""value"": null
+                                },
+                                {
+                                    ""field_name"": """",
+                                    ""field_type"": 1003,
+                                    ""operator"": ""contains"",
+                                    ""value"": null
+                                }
+                            ],
+                            ""other_perm"": 0
+                        },
+                        ""field_perm"": {
+                            ""单选"": 1,
+                            ""年龄"": 2
+                        }
+                    },
+                    {
+                        ""table_name"": ""table2"",
+                        ""table_id"": ""tblMPI6OC1aWvTvs"",
+                        ""table_perm"": 1,
+                        ""rec_rule"": {
+                            ""conditions"": [
+                                {
+                                    ""field_name"": ""人员"",
+                                    ""field_type"": 11,
+                                    ""operator"": ""contains"",
+                                    ""value"": null
+                                },
+                                {
+                                    ""field_name"": ""多选"",
+                                    ""field_type"": 4,
+                                    ""operator"": ""is"",
+                                    ""value"": [
+                                        ""opttgKOTSt"",
+                                        ""optWcdXR0W""
+                                    ]
+                                }
+                            ],
+                            ""other_perm"": 0,
+                            ""conjunction"": ""and""
+                        }
+                    },
+                    {
+                        ""table_name"": ""table3"",
+                        ""table_id"": ""tblmkLF7Tg6IWbRb"",
+                        ""table_perm"": 0
+                    },
+                    {
+                        ""table_name"": ""table4"",
+                        ""table_id"": ""tbl5VQHDTms19Qe7"",
+                        ""table_perm"": 4
+                    }
+                ],
+                ""block_roles"": [
+                    {
+                        ""block_id"": ""blknkqrP3RqUkcAW"",
+                        ""block_type"": ""dashboard"",
+                        ""block_perm"": 0
+                    },
+                    {
+                        ""block_id"": ""blkAjxjWKvbBi7EA"",
+                        ""block_type"": ""dashboard"",
+                        ""block_perm"": 1
+                    }
+                ]
+            }
+        ],
+        ""page_token"": ""rola66uIZT"",
+        ""has_more"": false,
+        ""total"": 1
+    }
+}",
+"bitable","get_bitable_record",,"{
+    ""code"":0,
+    ""data"":{
+        ""record"":{
+            ""fields"":{
+                ""人力耗时"":64,
+                ""人力评估"":""8"",
+                ""任务执行人"":[
+                    {
+                        ""email"":""huangpaopao@feishu.cn"",
+                        ""en_name"":""Paopao Huang"",
+                        ""id"":""ou_5fb00e0112212cc7012fe3a697336989"",
+                        ""name"":""黄泡泡""
+                    }
+                ],
+                ""任务描述"":""我是最大的功能开发🥕"",
+                ""任务附件"":[
+                    {
+                        ""file_token"":""boxcnkQWfV4XbHwzDngmezMGzXe"",
+                        ""name"":""2.gif"",
+                        ""size"":10250625,
+                        ""tmp_url"":""https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=boxcnkQWfV4XbHwzDngmezMGzXe"",
+                        ""type"":""image/gif"",
+                        ""url"":""https://open.feishu.cn/open-apis/drive/v1/medias/boxcnkQWfV4XbHwzDngmezMGzXe/download""
+                    }
+                ],
+                ""对应 OKR"":[
+                    {
+                        ""text"":""新功能评审"",
+                        ""type"":""text""
+                    }
+                ],
+                ""截止日期"":1612108800000,
+                ""文档地址"":{
+                    ""link"":""https://example.feishu.cn/drive/home/"",
+                    ""text"":""文档备份""
+                },
+                ""是否完成"":false,
+                ""状态"":""开发中"",
+                ""相关部门"":[
+                    ""研发""
+                ],
+                ""多行文本"":[
+                    {
+                        ""text"":""hello"",
+                        ""type"":""text""
+                    },
+                    {
+                        ""mentionType"":""User"",
+                        ""mentionNotify"":false,
+                        ""name"":""test"",
+                        ""text"":""@test"",
+                        ""token"":""ou_sfsdfsdfsdfsdfdsfsdfdsf"",
+                        ""type"":""mention""
+                    },
+                    {
+                        ""link"":""https://test-sasdfsfsd.feishu-boe.cn/base/basbcq2aFvW8nFJpfOXa1111111"",
+                        ""mentionType"":""Bitable"",
+                        ""text"":""未命名多维表格"",
+                        ""token"":""basbcq2aFvW8nFJpfOXalx57ffb"",
+                        ""type"":""mention""
+                    },
+                    {
+                        ""text"":""测试链接标题"",
+                        ""link"":""https://www.baidu.com/"",
+                        ""type"":""url""
+                    }
+                ],
+                ""单向关联"":[
+                    {
+                        ""type"":""text"",
+                        ""table_id"":""tbltAvx3DYBw7PVj"",
+                        ""record_ids"":[
+                          ""recl1IWVnB""
+                        ],
+                        ""text"":""第一行""
+                    }
+                ],
+                ""双向关联"":[
+                    {
+                        ""table_id"":""tbltAvx3DYBw7PVj"",
+                        ""record_ids"":[
+                          ""recl1IWVnB"",
+                          ""recrJk7SXT""
+                        ],
+                        ""text"":""第一行,第二行"",
+                        ""type"":""text""
+                    }
+                ]
+            },
+            ""record_id"":""recn0hoyXL"",
+            ""record_url"": ""https://example.feishu.cn/record/1sfvuxxxxxxxxxxxxxKdupE5Q""
+        }
+    },
+    ""msg"":""Success""
+}",
+"drive","create_wiki_node","{
+    ""obj_type"": ""doc"",
+    ""parent_node_token"": ""wikcnKQ1k3p******8Vabcef"",
+    ""node_type"": ""origin""
+}","{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""node"": {
+            ""space_id"": ""6946843325487906839"",
+            ""node_token"": ""wikcnKQ1k3p******8Vabcef"",
+            ""obj_token"": ""doccnzAaO******8g9Spprd"",
+            ""obj_type"": ""doc"",
+            ""parent_node_token"": ""wikcnKQ1k3p******8Vabcef"",
+            ""node_type"": ""origin"",
+            ""origin_node_token"": """",
+            ""origin_space_id"": """",
+            ""has_child"": false,
+            ""title"": """"
+        }
+    }
+}",
+"drive","get_subscribe_drive_file",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""is_subscribe"": true
+    }
+}",
+"drive","get_wiki_node",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""node"": {
+            ""space_id"": ""6946843325487912356"",
+            ""node_token"": ""wikcnKQ1k3p******8Vabcef"",
+            ""obj_token"": ""doccnzAaOD******Wabcdef"",
+            ""obj_type"": ""doc"",
+            ""parent_node_token"": ""wikcnKQ1k3p******8Vabcef"",
+            ""node_type"": ""origin"",
+            ""origin_node_token"": ""wikcnKQ1k3p******8Vabcef"",
+            ""origin_space_id"": ""6946843325487912356"",
+            ""has_child"": false,
+            ""title"": ""标题"",
+            ""obj_create_time"": ""1642402428"",
+            ""obj_edit_time"": ""1642402428"",
+            ""node_create_time"": ""1642402428"",
+            ""creator"": ""ou_xxxxx"",
+            ""owner"": ""ou_xxxxx""
+        }
+    }
+}",
+"drive","move_docs_to_wiki",,"{
+    ""code"": 0,
+    ""data"": {
+        ""wiki_token"": ""wikbcLZuhp4r9QuJumHzVabcdef""
+    },
+    ""msg"": ""success""
+}",
+"core_hr","create_core_hr_national_id_type","{""country_region_id"":""6862995747139225096"",
+""name"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""active"":true,
+""validation_rule"":"""",
+""validation_rule_description"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""code"":""AUS-TFN"",
+""identification_type"":{""enum_name"":""type_1""},
+""custom_fields"":[{
+    ""field_name"": ""name"",
+    ""value"": ""\""Sandy\""""
+}]}","{""code"":0,
+""msg"":""success"",
+""data"":{""national_id_type"":{""id"":""6888198886960137735"",
+""country_region_id"":""6862995747139225096"",
+""name"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""active"":true,
+""validation_rule"":"""",
+""validation_rule_description"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""code"":""AUS-TFN"",
+""identification_type"":{""enum_name"":""type_1"",
+""display"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}]},
+""custom_fields"":[{
+    ""field_name"": ""name"",
+    ""value"": ""\""Sandy\""""
+}]}}}",
+"core_hr","get_core_hr_national_id_type",,"{""code"":0,
+""msg"":""success"",
+""data"":{""national_id_type"":{""id"":""6888198886960137735"",
+""country_region_id"":""6862995747139225096"",
+""name"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""active"":true,
+""validation_rule"":"""",
+""validation_rule_description"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""code"":""AUS-TFN"",
+""identification_type"":{""enum_name"":""type_1"",
+""display"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}]},
+""custom_fields"":[{
+    ""field_name"": ""name"",
+    ""value"": ""\""Sandy\""""
+}]}}}",
+"core_hr","get_core_hr_national_id_type_list",,"{""code"":0,
+""msg"":""success"",
+""data"":{""items"":[{""id"":""6888198886960137735"",
+""country_region_id"":""6862995747139225096"",
+""name"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""active"":true,
+""validation_rule"":"""",
+""validation_rule_description"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""code"":""AUS-TFN"",
+""identification_type"":{""enum_name"":""type_1"",
+""display"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}]},
+""custom_fields"":[{
+    ""field_name"": ""name"",
+    ""value"": ""\""Sandy\""""
+}]}],
+""has_more"":true,
+""page_token"":""1234452132""}}",
+"core_hr","search_core_hr_offboarding",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""items"": [
+            {
+                ""initiating_type"": ""offboarding_directly"",
+                ""status"": ""Approving"",
+                ""application_info"": {
+                    ""apply_initiator_id"": ""6838119494196871234"",
+                    ""apply_initiating_time"": ""2022-02-03 11:22:33"",
+                    ""apply_finish_time"": ""2022-02-03 11:22:33"",
+                    ""process_id"": ""6838119494196871234""
+                },
+                ""offboarding_info"": {
+                    ""employment_id"": ""6893014062142064135"",
+                    ""hrbp_id"": [
+                        ""6893014062142064135""
+                    ],
+                    ""expected_offboarding_date"": ""2022-02-08"",
+                    ""offboarding_date"": ""2022-02-08"",
+                    ""reason"": {
+                        ""enum_name"": ""phone_type"",
+                        ""display"": [
+                            {
+                                ""lang"": ""zh-CN"",
+                                ""value"": ""刘梓新""
+                            }
+                        ]
+                    },
+                    ""reason_explanation"": ""升学"",
+                    ""employee_reason"": {
+                        ""enum_name"": ""phone_type"",
+                        ""display"": [
+                            {
+                                ""lang"": ""zh-CN"",
+                                ""value"": ""刘梓新""
+                            }
+                        ]
+                    },
+                    ""employee_reason_explanation"": ""升学"",
+                    ""add_block_list"": ""false"",
+                    ""block_reason"": {
+                        ""enum_name"": ""phone_type"",
+                        ""display"": [
+                            {
+                                ""lang"": ""zh-CN"",
+                                ""value"": ""刘梓新""
+                            }
+                        ]
+                    },
+                    ""block_reason_explanation"": ""xx 年 xx 月 xx 日因 xx 原因红线"",
+                    ""custom_fields"": [
+                        {
+                            ""custom_api_name"": ""name"",
+                            ""name"": {
+                                ""zh_cn"": ""自定义姓名"",
+                                ""en_us"": ""Custom Name""
+                            },
+                            ""type"": 1,
+                            ""value"": ""\""231\""""
+                        }
+                    ]
+                },
+                ""offboarding_checklist"": {
+                    ""checklist_status"": ""AntiBegin"",
+                    ""checklist_start_time"": ""2022-02-03 11:22:33"",
+                    ""checklist_finish_time"": ""2022-02-03 11:22:33"",
+                    ""checklist_process_id"": ""6838119494196871234""
+                }
+            }
+        ],
+        ""page_token"": ""eyJldV9uYyI6IlswLFwiNjk2MTI4Njg0NjA5Mzc4ODY4MC03MjExMDM0ODcxMjA3OTUzOTc1XCJdIn0="",
+        ""has_more"": true
+    }
+}",
+"core_hr","update_core_hr_national_id_type","{""country_region_id"":""6862995747139225096"",
+""name"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""active"":true,
+""validation_rule"":"""",
+""validation_rule_description"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""code"":""AUS-TFN"",
+""identification_type"":{""enum_name"":""type_1""},
+""custom_fields"":[{
+    ""field_name"": ""name"",
+    ""value"": ""\""Sandy\""""
+}]}","{""code"":0,
+""msg"":""success"",
+""data"":{""national_id_type"":{""id"":""6888198886960137735"",
+""country_region_id"":""6862995747139225096"",
+""name"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""active"":true,
+""validation_rule"":"""",
+""validation_rule_description"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}],
+""code"":""AUS-TFN"",
+""identification_type"":{""enum_name"":""type_1"",
+""display"":[{
+    ""lang"": ""zh-CN"",
+    ""value"": ""张三""
+}]},
+""custom_fields"":[{
+    ""field_name"": ""name"",
+    ""value"": ""\""Sandy\""""
+}]}}}",
+"contact","delete_user","{
+    ""department_chat_acceptor_user_id"": ""ou_7dab8a3d3cdcc9da365777c7ad535d62"",
+    ""external_chat_acceptor_user_id"": ""ou_7dab8a3d3cdcc9da365777c7ad535d62"",
+    ""docs_acceptor_user_id"": ""ou_7dab8a3d3cdcc9da365777c7ad535d62"",
+    ""calendar_acceptor_user_id"": ""ou_7dab8a3d3cdcc9da365777c7ad535d62"",
+    ""application_acceptor_user_id"": ""ou_7dab8a3d3cdcc9da365777c7ad535d62"",
+    ""helpdesk_acceptor_user_id"": ""ou_7dab8a3d3cdcc9da365777c7ad535d62"",
+	""email_acceptor"": {
+		""processing_type"": ""1"",
+		""acceptor_user_id"": ""ou_7dab8a3d3cdcc9da365777c7ad535d62""
+	}
+}",,
+"contact","update_department",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""department"": {
+            ""name"": ""DemoName"",
+            ""i18n_name"": {
+                ""zh_cn"": ""Demo名称"",
+                ""ja_jp"": ""デモ名"",
+                ""en_us"": ""Demo Name""
+            },
+            ""parent_department_id"": ""D067"",
+            ""department_id"": ""D096"",
+            ""open_department_id"": ""od-4e6ac4d14bcd5071a37a39de902c7141"",
+            ""leader_user_id"": ""ou_7dab8a3d3cdcc9da365777c7ad535d62"",
+            ""chat_id"": ""oc_5ad11d72b830411d72b836c20"",
+            ""order"": ""100"",
+            ""unit_ids"": [
+                ""custom_unit_id""
+            ],
+            ""member_count"": 100,
+            ""status"": {
+                ""is_deleted"": false
+            },
+            ""leaders"": [
+                {
+                    ""leaderID"": ""ou_357368f98775f04bea02afc6b1d33478"",
+                    ""leaderType"": 1
+                }
+            ]
+        }
+    }
+}",
+"contact","get_contact_work_city_list",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""items"": [
+            {
+                ""work_city_id"": ""0dd1ec95f021"",
+                ""name"": ""北京"",
+                ""i18n_name"": [
+                    {
+                        ""locale"": ""zh_cn"",
+                        ""value"": ""北京""
+                    }
+                ],
+                ""status"": true
+            }
+        ],
+        ""page_token"": ""1r5QdASJi1sp5aJn"",
+        ""has_more"": true
+    }
+}",
+"contact","get_contact_work_city",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""work_city"": {
+            ""work_city_id"": ""0dd1ec95f021"",
+            ""name"": ""北京"",
+            ""i18n_name"": [
+                {
+                    ""locale"": ""zh_cn"",
+                    ""value"": ""北京""
+                }
+            ],
+            ""status"": true
+        }
+    }
+}",
+"contact","get_contact_job_title_list",,"{""code"":0,
+""msg"":""success"",
+""data"":{""items"":[{""job_title_id"":""b5565c46b749"",
+""name"":""高级工程师"",
+""i18n_name"":[{
+    ""locale"": ""zh_cn"",
+    ""value"": ""专家""
+}],
+""status"":true}],
+""page_token"":""1r5QdASJi1sp5aJn"",
+""has_more"":true}}",
+"contact","get_contact_job_title",,"{""code"":0,
+""msg"":""success"",
+""data"":{""job_title"":{""job_title_id"":""b5565c46b749"",
+""name"":""高级工程师"",
+""i18n_name"":[{
+    ""locale"": ""zh_cn"",
+    ""value"": ""专家""
+}],
+""status"":true}}}",
+"hire","get_hire_talent",,"{
+    ""code"": 0,
+    ""msg"": ""success"",
+    ""data"": {
+        ""talent"": {
+            ""id"": ""6891560630172518670"",
+            ""is_in_agency_period"": true,
+            ""is_onboarded"": true,
+            ""basic_info"": {
+                ""name"": ""测试"",
+                ""mobile"": ""182900291190"",
+                ""mobile_code"": ""86"",
+                ""mobile_country_code"": ""CN_1"",
+                ""email"": ""16xx1@126.com"",
+                ""experience_years"": 5,
+                ""age"": 22,
+                ""nationality"": {
+                    ""nationality_code"": ""CN_183"",
+                    ""zh_name"": ""测试"",
+                    ""en_name"": ""test""
+                },
+                ""gender"": 1,
+                ""current_city"": {
+                    ""city_code"": ""CN_183"",
+                    ""zh_name"": ""测试"",
+                    ""en_name"": ""test""
+                },
+                ""hometown_city"": {
+                    ""city_code"": ""CN_183"",
+                    ""zh_name"": ""测试"",
+                    ""en_name"": ""test""
+                },
+                ""preferred_city_list"": [
+                    {
+                        ""city_code"": ""CN_183"",
+                        ""zh_name"": ""测试"",
+                        ""en_name"": ""test""
+                    }
+                ],
+                ""identification_type"": 1,
+                ""identification_number"": ""511699199x1x111234"",
+                ""birthday"": 1687872017,
+                ""creator_id"": ""ou-xxx"",
+                ""marital_status"": 1,
+                ""current_home_address"": ""南京路1号"",
+                ""customized_data_list"": [
+                    {
+                        ""object_id"": ""xxxx"",
+                        ""name"": {
+                            ""zh_cn"": ""测试"",
+                            ""en_us"": ""test""
+                        },
+                        ""object_type"": 1,
+                        ""value"": {
+                            ""content"": ""text"",
+                            ""option"": {
+                                ""key"": ""AA"",
+                                ""name"": {
+                                    ""zh_cn"": ""测试"",
+                                    ""en_us"": ""test""
+                                }
+                            },
+                            ""option_list"": [
+                                {
+                                    ""key"": ""AA"",
+                                    ""name"": {
+                                        ""zh_cn"": ""测试"",
+                                        ""en_us"": ""test""
+                                    }
+                                }
+                            ],
+                            ""time_range"": {
+                                ""start_time"": ""1625456721"",
+                                ""end_time"": ""1625656721""
+                            },
+                            ""time"": ""1625456721"",
+                            ""number"": ""111"",
+                            ""customized_attachment"": [
+                                {
+                                    ""file_id"": ""7140517838785481004"",
+                                    ""name"": ""1.13测试1的面试记录.pdf"",
+                                    ""content_type"": ""application/pdf"",
+                                    ""file_size"": 16615
+                                }
+                            ]
+                        }
+                    }
+                ],
+                ""modify_time"": ""1634801678103"",
+                ""hukou_location_code"": ""CN_1""
+            },
+            ""education_list"": [
+                {
+                    ""id"": ""6891560630172518670"",
+                    ""degree"": 1,
+                    ""school"": ""湘港大学"",
+                    ""field_of_study"": ""考古"",
+                    ""start_time"": ""1990-01"",
+                    ""end_time"": ""1994-01"",
+                    ""end_time_v2"": ""1687180087000"",
+                    ""education_type"": 1,
+                    ""academic_ranking"": 5,
+                    ""tag_list"": [
+                    ],
+                    ""customized_data_list"": [
+                        {
+                            ""object_id"": ""xxxx"",
+                            ""name"": {
+                                ""zh_cn"": ""测试"",
+                                ""en_us"": ""test""
+                            },
+                            ""object_type"": 1,
+                            ""value"": {
+                                ""content"": ""text"",
+                                ""option"": {
+                                    ""key"": ""AA"",
+                                    ""name"": {
+                                        ""zh_cn"": ""测试"",
+                                        ""en_us"": ""test""
+                                    }
+                                },
+                                ""option_list"": [
+                                    {
+                                        ""key"": ""AA"",
+                                        ""name"": {
+                                            ""zh_cn"": ""测试"",
+                                            ""en_us"": ""test""
+                                        }
+                                    }
+                                ],
+                                ""time_range"": {
+                                    ""start_time"": ""1625456721"",
+                                    ""end_time"": ""1625656721""
+                                },
+                                ""time"": ""1625456721"",
+                                ""number"": ""111"",
+                                ""customized_attachment"": [
+                                    {
+                                        ""file_id"": ""7140517838785481004"",
+                                        ""name"": ""1.13测试1的面试记录.pdf"",
+                                        ""content_type"": ""application/pdf"",
+                                        ""file_size"": 16615
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            ""career_list"": [
+                {
+                    ""id"": ""6891560630172518670"",
+                    ""company"": ""测试公司"",
+                    ""title"": ""高级工程师"",
+                    ""desc"": ""测试"",
+                    ""start_time"": ""1990-01"",
+                    ""end_time"": ""1994-01"",
+                    ""career_type"": 1,
+                    ""tag_list"": [
+                        6
+                    ],
+                    ""customized_data_list"": [
+                        {
+                            ""object_id"": ""xxxx"",
+                            ""name"": {
+                                ""zh_cn"": ""测试"",
+                                ""en_us"": ""test""
+                            },
+                            ""object_type"": 1,
+                            ""value"": {
+                                ""content"": ""text"",
+                                ""option"": {
+                                    ""key"": ""AA"",
+                                    ""name"": {
+                                        ""zh_cn"": ""测试"",
+                                        ""en_us"": ""test""
+                                    }
+                                },
+                                ""option_list"": [
+                                    {
+                                        ""key"": ""AA"",
+                                        ""name"": {
+                                            ""zh_cn"": ""测试"",
+                                            ""en_us"": ""test""
+                                        }
+                                    }
+                                ],
+                                ""time_range"": {
+                                    ""start_time"": ""1625456721"",
+                                    ""end_time"": ""1625656721""
+                                },
+                                ""time"": ""1625456721"",
+                                ""number"": ""111"",
+                                ""customized_attachment"": [
+                                    {
+                                        ""file_id"": ""7140517838785481004"",
+                                        ""name"": ""1.13测试1的面试记录.pdf"",
+                                        ""content_type"": ""application/pdf"",
+                                        ""file_size"": 16615
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            ""project_list"": [
+                {
+                    ""id"": ""6891560630172518670"",
+                    ""name"": ""测试"",
+                    ""role"": ""test"",
+                    ""link"": ""www.test.com"",
+                    ""desc"": ""test"",
+                    ""start_time"": ""1990-01"",
+                    ""end_time"": ""1991-01"",
+                    ""customized_data_list"": [
+                        {
+                            ""object_id"": ""xxxx"",
+                            ""name"": {
+                                ""zh_cn"": ""测试"",
+                                ""en_us"": ""test""
+                            },
+                            ""object_type"": 1,
+                            ""value"": {
+                                ""content"": ""text"",
+                                ""option"": {
+                                    ""key"": ""AA"",
+                                    ""name"": {
+                                        ""zh_cn"": ""测试"",
+                                        ""en_us"": ""test""
+                                    }
+                                },
+                                ""option_list"": [
+                                    {
+                                        ""key"": ""AA"",
+                                        ""name"": {
+                                            ""zh_cn"": ""测试"",
+                                            ""en_us"": ""test""
+                                        }
+                                    }
+                                ],
+                                ""time_range"": {
+                                    ""start_time"": ""1625456721"",
+                                    ""end_time"": ""1625656721""
+                                },
+                                ""time"": ""1625456721"",
+                                ""number"": ""111"",
+                                ""customized_attachment"": [
+                                    {
+                                        ""file_id"": ""7140517838785481004"",
+                                        ""name"": ""1.13测试1的面试记录.pdf"",
+                                        ""content_type"": ""application/pdf"",
+                                        ""file_size"": 16615
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            ""works_list"": [
+                {
+                    ""id"": ""6891560630172518670"",
+                    ""link"": ""www.test.com"",
+                    ""desc"": ""test"",
+                    ""name"": ""XX项目"",
+                    ""customized_data_list"": [
+                        {
+                            ""object_id"": ""xxxx"",
+                            ""name"": {
+                                ""zh_cn"": ""测试"",
+                                ""en_us"": ""test""
+                            },
+                            ""object_type"": 1,
+                            ""value"": {
+                                ""content"": ""text"",
+                                ""option"": {
+                                    ""key"": ""AA"",
+                                    ""name"": {
+                                        ""zh_cn"": ""测试"",
+                                        ""en_us"": ""test""
+                                    }
+                                },
+                                ""option_list"": [
+                                    {
+                                        ""key"": ""AA"",
+                                        ""name"": {
+                                            ""zh_cn"": ""测试"",
+                                            ""en_us"": ""test""
+                                        }
+                                    }
+                                ],
+                                ""time_range"": {
+                                    ""start_time"": ""1625456721"",
+                                    ""end_time"": ""1625656721""
+                                },
+                                ""time"": ""1625456721"",
+                                ""number"": ""111"",
+                                ""customized_attachment"": [
+                                    {
+                                        ""file_id"": ""7140517838785481004"",
+                                        ""name"": ""1.13测试1的面试记录.pdf"",
+                                        ""content_type"": ""application/pdf"",
+                                        ""file_size"": 16615
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            ""award_list"": [
+                {
+                    ""id"": ""6891560630172518670"",
+                    ""title"": ""最佳新人奖"",
+                    ""award_time"": ""1991"",
+                    ""desc"": ""最优秀的新人奖"",
+                    ""customized_data_list"": [
+                        {
+                            ""object_id"": ""xxxx"",
+                            ""name"": {
+                                ""zh_cn"": ""测试"",
+                                ""en_us"": ""test""
+                            },
+                            ""object_type"": 1,
+                            ""value"": {
+                                ""content"": ""text"",
+                                ""option"": {
+                                    ""key"": ""AA"",
+                                    ""name"": {
+                                        ""zh_cn"": ""测试"",
+                                        ""en_us"": ""test""
+                                    }
+                                },
+                                ""option_list"": [
+                                    {
+                                        ""key"": ""AA"",
+                                        ""name"": {
+                                            ""zh_cn"": ""测试"",
+                                            ""en_us"": ""test""
+                                        }
+                                    }
+                                ],
+                                ""time_range"": {
+                                    ""start_time"": ""1625456721"",
+                                    ""end_time"": ""1625656721""
+                                },
+                                ""time"": ""1625456721"",
+                                ""number"": ""111"",
+                                ""customized_attachment"": [
+                                    {
+                                        ""file_id"": ""7140517838785481004"",
+                                        ""name"": ""1.13测试1的面试记录.pdf"",
+                                        ""content_type"": ""application/pdf"",
+                                        ""file_size"": 16615
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            ""language_list"": [
+                {
+                    ""id"": ""6891560630172518670"",
+                    ""language"": 1,
+                    ""proficiency"": 1,
+                    ""customized_data_list"": [
+                        {
+                            ""object_id"": ""xxxx"",
+                            ""name"": {
+                                ""zh_cn"": ""测试"",
+                                ""en_us"": ""test""
+                            },
+                            ""object_type"": 1,
+                            ""value"": {
+                                ""content"": ""text"",
+                                ""option"": {
+                                    ""key"": ""AA"",
+                                    ""name"": {
+                                        ""zh_cn"": ""测试"",
+                                        ""en_us"": ""test""
+                                    }
+                                },
+                                ""option_list"": [
+                                    {
+                                        ""key"": ""AA"",
+                                        ""name"": {
+                                            ""zh_cn"": ""测试"",
+                                            ""en_us"": ""test""
+                                        }
+                                    }
+                                ],
+                                ""time_range"": {
+                                    ""start_time"": ""1625456721"",
+                                    ""end_time"": ""1625656721""
+                                },
+                                ""time"": ""1625456721"",
+                                ""number"": ""111"",
+                                ""customized_attachment"": [
+                                    {
+                                        ""file_id"": ""7140517838785481004"",
+                                        ""name"": ""1.13测试1的面试记录.pdf"",
+                                        ""content_type"": ""application/pdf"",
+                                        ""file_size"": 16615
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            ""sns_list"": [
+                {
+                    ""id"": ""6891560630172518670"",
+                    ""sns_type"": 1,
+                    ""link"": ""www.test.com"",
+                    ""customized_data_list"": [
+                        {
+                            ""object_id"": ""xxxx"",
+                            ""name"": {
+                                ""zh_cn"": ""测试"",
+                                ""en_us"": ""test""
+                            },
+                            ""object_type"": 1,
+                            ""value"": {
+                                ""content"": ""text"",
+                                ""option"": {
+                                    ""key"": ""AA"",
+                                    ""name"": {
+                                        ""zh_cn"": ""测试"",
+                                        ""en_us"": ""test""
+                                    }
+                                },
+                                ""option_list"": [
+                                    {
+                                        ""key"": ""AA"",
+                                        ""name"": {
+                                            ""zh_cn"": ""测试"",
+                                            ""en_us"": ""test""
+                                        }
+                                    }
+                                ],
+                                ""time_range"": {
+                                    ""start_time"": ""1625456721"",
+                                    ""end_time"": ""1625656721""
+                                },
+                                ""time"": ""1625456721"",
+                                ""number"": ""111"",
+                                ""customized_attachment"": [
+                                    {
+                                        ""file_id"": ""7140517838785481004"",
+                                        ""name"": ""1.13测试1的面试记录.pdf"",
+                                        ""content_type"": ""application/pdf"",
+                                        ""file_size"": 16615
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            ""resume_source_list"": [
+                {
+                    ""id"": ""6891560630172518670"",
+                    ""zh_name"": ""猎头"",
+                    ""en_name"": ""Hunter""
+                }
+            ],
+            ""interview_registration_list"": [
+                {
+                    ""id"": ""6833685612520950030"",
+                    ""registration_time"": 1618494330932,
+                    ""download_url"": ""https://hire.feishu.cn/hire/file/blob/...token.../""
+                }
+            ],
+            ""registration_list"": [
+                {
+                    ""id"": ""6833685612520950030"",
+                    ""registration_time"": 1618494330932,
+                    ""download_url"": ""https://hire.feishu.cn/hire/file/blob/...token.../"",
+                    ""scenario"": 5
+                }
+            ],
+            ""resume_attachment_id_list"": [
+                ""64352523512563462""
+            ],
+            ""customized_data_list"": [
+                {
+                    ""object_id"": ""xxxx"",
+                    ""name"": {
+                        ""zh_cn"": ""测试"",
+                        ""en_us"": ""test""
+                    },
+                    ""object_type"": 1,
+                    ""children"": [
+                        {
+                            ""object_id"": ""xxxx"",
+                            ""name"": {
+                                ""zh_cn"": ""测试"",
+                                ""en_us"": ""test""
+                            },
+                            ""object_type"": 1,
+                            ""value"": {
+                                ""content"": ""text"",
+                                ""option"": {
+                                    ""key"": ""AA"",
+                                    ""name"": {
+                                        ""zh_cn"": ""测试"",
+                                        ""en_us"": ""test""
+                                    }
+                                },
+                                ""option_list"": [
+                                    {
+                                        ""key"": ""AA"",
+                                        ""name"": {
+                                            ""zh_cn"": ""测试"",
+                                            ""en_us"": ""test""
+                                        }
+                                    }
+                                ],
+                                ""time_range"": {
+                                    ""start_time"": ""1625456721"",
+                                    ""end_time"": ""1625656721""
+                                },
+                                ""time"": ""1625456721"",
+                                ""number"": ""111"",
+                                ""customized_attachment"": [
+                                    {
+                                        ""file_id"": ""7140517838785481004"",
+                                        ""name"": ""1.13测试1的面试记录.pdf"",
+                                        ""content_type"": ""application/pdf"",
+                                        ""file_size"": 16615
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            ""top_degree"": 1,
+            ""first_degree"": 3
+        }
+    }
+}",

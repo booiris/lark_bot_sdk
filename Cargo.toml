@@ -1,0 +1,131 @@
+workspace = { members = ["gen_api", "lark_macros"] }
+
+[package]
+name = "lark_bot_sdk"
+version = "0.1.0"
+edition = "2021"
+authors = ["booiris02@gmail.com"]
+license = "MIT"
+readme = "README.md"
+description = "rust lark bot sdk"
+keywords = ["lark"]
+exclude = ["source/*", "test.bash", "gen_doc.bash"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+
+[dependencies]
+tokio = { version = "1.3", features = ["rt-multi-thread"] }
+thiserror = "1.0"
+derive_builder = "0.20"
+ahash = "0.8"
+chrono = "0.4"
+tracing = "0.1"
+anyhow = "1.0"
+reqwest = { version = "0.12", features = ["stream", "json", "multipart"] }
+http = "1.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bytes = "1.6"
+futures-util = { version = "0.3" }
+base64 = "0.22"
+typemap_rev = { version = "0.3", optional = true }
+tokio-util = { version = "0.7", features = ["io"] }
+lark_bot_sdk_macros = { version = "0.1", path = "./lark_macros" }
+
+[dev-dependencies]
+env_logger = "0.11"
+ctor = "0.2"
+dotenv_codegen = "0.15"
+tokio = { version = "1.3", features = ["test-util", "macros"] }
+log = "0.4"
+tokio-stream = "0.1"
+
+[features]
+full = ["full_biz"]
+test-util = ["typemap_rev"]
+default = ["message"]
+macros = []
+_local_test = []
+acs = []
+ai = []
+admin = []
+application = []
+approval = []
+attendance = []
+baike = []
+bitable = []
+bot = []
+calendar = []
+chat = []
+contact = []
+core_hr = []
+drive = []
+ehr = []
+event = []
+file = []
+helpdesk = []
+hire = []
+human_auth = []
+jssdk = []
+lingo = []
+mail = []
+message = []
+mina = []
+minutes = []
+okr = []
+passport = []
+performance = []
+personal_settings = []
+search = []
+task = []
+tenant = []
+vc = []
+verification = []
+full_biz = [
+    "acs",
+    "ai",
+    "admin",
+    "application",
+    "approval",
+    "attendance",
+    "baike",
+    "bitable",
+    "bot",
+    "calendar",
+    "chat",
+    "contact",
+    "core_hr",
+    "drive",
+    "ehr",
+    "event",
+    "file",
+    "helpdesk",
+    "hire",
+    "human_auth",
+    "jssdk",
+    "lingo",
+    "mail",
+    "message",
+    "mina",
+    "minutes",
+    "okr",
+    "passport",
+    "performance",
+    "personal_settings",
+    "search",
+    "task",
+    "tenant",
+    "vc",
+    "verification",
+]
+
+[profile.release]
+opt-level = 3
+debug = false
+debug-assertions = false
+lto = true
+panic = 'unwind'
+incremental = false
+codegen-units = 1
+rpath = false
