@@ -20,7 +20,7 @@ lark_bot_sdk = { version = "0.1", features = ["message", "ai",...] }
 
 查询 api 方法参考: [cargo doc](https://booiris.github.io/lark_bot_sdk/lark_bot_sdk/) (`ctrl` + `shift` + `f`)
 
-![case](source/case.gif)
+![case](https://cdn.jsdelivr.net/gh/booiris-cdn/img/case.gif)
 
 ## 使用
 
