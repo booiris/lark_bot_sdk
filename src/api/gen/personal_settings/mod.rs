@@ -1,4 +1,4 @@
-use crate::core::{ Lark, LarkInner};
+use crate::core::{Lark, LarkInner};
 
 pub struct PersonalSettingsService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -24,8 +24,8 @@ impl<Store, Client> Lark<Store, Client> {
     }
 }
 pub mod batch_close_personal_settings_system_status;
-pub mod delete_personal_settings_system_status;
-pub mod create_personal_settings_system_status;
-pub mod update_personal_settings_system_status;
-pub mod get_personal_settings_system_status_list;
 pub mod batch_open_personal_settings_system_status;
+pub mod create_personal_settings_system_status;
+pub mod delete_personal_settings_system_status;
+pub mod get_personal_settings_system_status_list;
+pub mod update_personal_settings_system_status;

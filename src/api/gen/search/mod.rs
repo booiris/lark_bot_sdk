@@ -1,4 +1,4 @@
-use crate::core::{ Lark, LarkInner};
+use crate::core::{Lark, LarkInner};
 
 pub struct SearchService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -23,18 +23,18 @@ impl<Store, Client> Lark<Store, Client> {
         SearchService { cli: &self.inner }
     }
 }
-pub mod update_search_data_source;
-pub mod search_message;
-pub mod get_search_data_source;
-pub mod delete_search_schema;
-pub mod create_search_schema;
-pub mod get_search_schema;
-pub mod get_search_data_source_item;
-pub mod delete_search_data_source_item;
-pub mod delete_search_data_source;
-pub mod create_search_data_source;
-pub mod get_search_data_source_list;
 pub mod batch_create_search_data_source_item;
+pub mod create_search_data_source;
 pub mod create_search_data_source_item;
+pub mod create_search_schema;
+pub mod delete_search_data_source;
+pub mod delete_search_data_source_item;
+pub mod delete_search_schema;
+pub mod get_search_data_source;
+pub mod get_search_data_source_item;
+pub mod get_search_data_source_list;
+pub mod get_search_schema;
 pub mod search_app;
+pub mod search_message;
+pub mod update_search_data_source;
 pub mod update_search_schema;

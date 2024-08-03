@@ -1,4 +1,4 @@
-use crate::core::{ Lark, LarkInner};
+use crate::core::{Lark, LarkInner};
 
 pub struct EventService<'client, Store, Client> {
     #[allow(dead_code)]

@@ -1,4 +1,4 @@
-use crate::core::{ Lark, LarkInner};
+use crate::core::{Lark, LarkInner};
 
 pub struct BotService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -23,5 +23,5 @@ impl<Store, Client> Lark<Store, Client> {
         BotService { cli: &self.inner }
     }
 }
-pub mod get_bot_info;
 pub mod add_bot_to_chat;
+pub mod get_bot_info;

@@ -1,4 +1,4 @@
-use crate::core::{ Lark, LarkInner};
+use crate::core::{Lark, LarkInner};
 
 pub struct AcsService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -23,17 +23,17 @@ impl<Store, Client> Lark<Store, Client> {
         AcsService { cli: &self.inner }
     }
 }
-pub mod update_acs_user;
-pub mod get_acs_access_record_photo;
-pub mod device_bind_acs_rule_external;
-pub mod get_acs_device_list;
 pub mod create_acs_rule_external;
-pub mod get_acs_user_list;
-pub mod get_acs_user_face;
-pub mod get_acs_rule_external;
-pub mod update_acs_user_face;
 pub mod create_acs_visitor;
-pub mod delete_acs_visitor;
 pub mod delete_acs_rule_external;
-pub mod get_acs_user;
+pub mod delete_acs_visitor;
+pub mod device_bind_acs_rule_external;
 pub mod get_acs_access_record_list;
+pub mod get_acs_access_record_photo;
+pub mod get_acs_device_list;
+pub mod get_acs_rule_external;
+pub mod get_acs_user;
+pub mod get_acs_user_face;
+pub mod get_acs_user_list;
+pub mod update_acs_user;
+pub mod update_acs_user_face;

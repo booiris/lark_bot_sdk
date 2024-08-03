@@ -1,4 +1,4 @@
-use crate::core::{ Lark, LarkInner};
+use crate::core::{Lark, LarkInner};
 
 pub struct TenantService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -23,5 +23,5 @@ impl<Store, Client> Lark<Store, Client> {
         TenantService { cli: &self.inner }
     }
 }
-pub mod get_tenant_product_assign_info;
 pub mod get_tenant;
+pub mod get_tenant_product_assign_info;

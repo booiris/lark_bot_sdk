@@ -1,12 +1,12 @@
 #[cfg_attr(docsrs, doc(cfg(feature = "acs")))]
 #[cfg(feature = "acs")]
 pub mod acs;
-#[cfg_attr(docsrs, doc(cfg(feature = "ai")))]
-#[cfg(feature = "ai")]
-pub mod ai;
 #[cfg_attr(docsrs, doc(cfg(feature = "admin")))]
 #[cfg(feature = "admin")]
 pub mod admin;
+#[cfg_attr(docsrs, doc(cfg(feature = "ai")))]
+#[cfg(feature = "ai")]
+pub mod ai;
 #[cfg_attr(docsrs, doc(cfg(feature = "application")))]
 #[cfg(feature = "application")]
 pub mod application;

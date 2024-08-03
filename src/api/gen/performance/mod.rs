@@ -1,4 +1,4 @@
-use crate::core::{ Lark, LarkInner};
+use crate::core::{Lark, LarkInner};
 
 pub struct PerformanceService<'client, Store, Client> {
     #[allow(dead_code)]
@@ -23,6 +23,6 @@ impl<Store, Client> Lark<Store, Client> {
         PerformanceService { cli: &self.inner }
     }
 }
-pub mod get_performance_stage_task_by_user;
-pub mod get_performance_stage_task_by_page;
 pub mod get_performance_semester_list;
+pub mod get_performance_stage_task_by_page;
+pub mod get_performance_stage_task_by_user;
